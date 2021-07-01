@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Qtscore live score</title>
+	<link rel="shortcut icon" type="image/png" href="favicon-32x32.png"/>
+	<link rel="stylesheet" type="text/css" href="main-style.css">
+	<link rel="stylesheet" type="text/css" href="widgetCountries.css">
+	<script src="jquery.js"></script>
+	<script src="jqueryGlobals.js"></script>
+    <script src="jquery.widgetCountries.js" type="text/javascript"></script>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+	<!-- Vendor CSS Files -->
+	<link href="../assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+	<link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+	<link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+	<link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+	<link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+	<link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+	<link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+	<!-- Template Main CSS File -->
+	<link href="../assets/css/style.css" rel="stylesheet">
+</head>
+<!-- Header menu display -->
+<body class="headerMenuDisplay" style="background-color: black;">
+
+	<!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center" style="background-color: black;">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1><a href="index.html">QtScore</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="../index.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="../about.html">About</a></li>
+          <li><a class="nav-link scrollto" href="../how-to-profit.html">How to profit</a></li>
+          <li><a class="nav-link scrollto active" href="./livescores-results.html">Live Scores</a></li>
+          <li><a class="nav-link scrollto " href="">Prediction League</a></li>
+          <li class="dropdown"><a href="#"><span>Football Predictions</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+                <li><a href="../football-predictions/epl-predictions.html">English Premier League</a></li>
+                <li><a href="../football-predictions/ligone-predictions.html">Ligue 1</a></li>
+                <li><a href="../football-predictions/seriea-predictions.html">Serie A</a></li>
+                <li><a href="../football-predictions/laliga-predictions.html">La Liga</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Get in Touch</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <section style="background: #f72;"></section>
+  <h2 class="display text-center p-5 m-5">Live Scores</h2>
+
+<header class="pt-5">
+	<div class="container">
+		<div class="mainPageHeader">
+			<p class="switchButton"><span></span></p>
+		</div>
+	</div>
+</header>
+<div class="container container-with-errors">
+	<section id="widgetCountries"></section>
+	<section id="widgetLeague"></section>
+	<section id="widgetLiveScore"></section>
+</div>
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>Qtscore</h3>
+      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Qtscore</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/selecao-bootstrap-template/ -->
+        Template from <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by Kristien Nyamutsaka
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+<script type="text/javascript">
+
+	$(document).ready(function() {
+	    $('#widgetCountries').widgetCountries({
+	        widgetLeagueLocation: '#widgetLeague',
+	        widgetLiveScoreLocation: '#widgetLiveScore',
+	        widgetWidth: '19%',
+	        preferentialLeagues: ['8634', '590', '589', '588', '468', '343', '262', '195', '176', '148']
+	    });
+
+	    var windowWidthSize = $(window).width();
+
+		if (windowWidthSize < 769) {
+	        $('.logo-img-size-index').hide();
+	        $('.switchButton').css('margin', '0 auto');
+	        $('.mainPageHeader').css('margin', '0');
+	        $('.mainPageHeader').hide();
+	    }
+	    $('.switchButton').click(function() {
+	        if ($('.widgetLeague').length) {
+	            $('.widgetLiveScore').toggle();
+	            $('.callendar-select-for-mobile').toggle();
+	            $('.widgetLeague').toggle();
+	            if ($('.widgetLeague').is(":visible")) {
+	                $('.switchButton').html('Back to Live Score');
+	            } else {
+	                $('.switchButton').html('Back to League Details');
+	            }
+	        }
+	    });
+
+	});
+
+</script>
+</html>

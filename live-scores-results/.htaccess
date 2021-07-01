@@ -1,0 +1,4 @@
+Header set Access-Control-Allow-Origin https://apifootball.com
+Header set Access-Control-Allow-Credentials true
+
+Header always append X-Frame-Options SAMEORIGIN
