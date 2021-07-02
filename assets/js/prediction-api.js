@@ -24,24 +24,24 @@ $(document).ready(function () {
 
                         let card = `
                                 <div class="row p-5 align-items-enter justify-content-center text-center mb-3" style="border: 2px solid black;">
-                                <div class="col-2">
+                                <div class="col-sm-2">
                                     <img src="${res.data.localTeam.data.logo_path}" width="50px" class="img-fluid" alt="">
                                     <p>${res.data.localTeam.data.name}</p>
                                 </div>
-                                <div class="col-1 align-items-center justify-content-center"><h4>vs</h4></div>
-                                <div class="col-2">
+                                <div class="col-sm-1 align-items-center justify-content-center"><h4>vs</h4></div>
+                                <div class="col-sm-2">
                                     <img src="${res.data.visitorTeam.data.logo_path}" width="50px" class="img-fluid" alt="">
                                     <p>${res.data.visitorTeam.data.name}</p>
                                 </div>
-                                <div class="col-2">
+                                <div class="col-sm-2">
                                     <p><strong>BTTS</strong></p>
                                     <p>${rd.predictions.btts}</p>
                                 </div>
-                                <div class="col-2">
+                                <div class="col-sm-2">
                                     <p><strong>Over / Under 2.5</strong></p>
                                     <p>${rd.predictions.over_2_5} / ${rd.predictions.under_2_5}</p>
                                 </div>
-                                <div class="col-2">
+                                <div class="col-sm-2">
                                     <p><strong>Date & Time(UTC)</strong></p>
                                     <p>${res.data.time.starting_at.date.substring(5,)} ${res.data.time.starting_at.time.substring(0,5)}</p>
                                 </div>
