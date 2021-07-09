@@ -5,22 +5,6 @@
 * License: https://bootstrapmade.com/license/
 */
 
-// Contact form
-
-
-
-
-
-
-// Football API
-
-
-
-
-
-
-
-
 
 
 (function() {
