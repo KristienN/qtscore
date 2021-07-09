@@ -63,7 +63,12 @@
         <ul>
           <li><a class="nav-link scrollto" href="./index.html">Home</a></li>
           <li><a class="nav-link scrollto" href="./live/index.html">Live Scores</a></li>
-          <li><a class="nav-link scrollto active" href="football-predictions.html">Today's Predictions</a></li>
+          <li class="dropdown active rounded-pill"><a href="#"><span>Predictions</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="football-predictions.html">Today's Predictions</a></li>
+              <li><a href="admin-predictions.html">Our Personal Predictions</a></li>
+            </ul>
+          </li>
           <li><a class="nav-link scrollto" href="subscriptions.html">Subscriptions</a></li>
           <li><a class="nav-link scrollto" href="contact.html">Get in Touch</a></li>
         </ul>
@@ -104,7 +109,8 @@
   <footer id="footer" style="background-color: black;">
     <div class="container">
       <h3>Qtscore</h3>
-      <div class="social-links">
+      <a class="p-5 my-3" href="https://qtscore.herokuapp.com/"><h5>Admin | Manage Site</h5></a>
+      <div class="social-links mt-2">
         <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
         <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
         <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>

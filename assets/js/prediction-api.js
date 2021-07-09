@@ -2,37 +2,7 @@ $(document).ready(function () {
 
     let $rawData;
     let $pack;
-
-    $.ajax({
-        type: "GET",
-        url: "qtscore.herokuapp.com/prediction/",
-        success: function (response) {
-            response.forEach(res => {
-                let card_pred = `
-                                <div class="row p-5 align-items-enter justify-content-center text-center mb-3" style="border: 2px solid black;">
-                                <div class="col-sm-2">
-                                    <p>${res.home_team}</p>
-                                </div>
-                                <div class="col-sm-1 align-items-center justify-content-center"><h4>vs</h4></div>
-                                <div class="col-sm-2">
-                                    <p>${res.away_team}</p>
-                                </div>
-                                <div class="col-sm-2">
-                                    <p><strong>Home Score</strong></p>
-                                    <p>${res.home_score}</p>
-                                </div>
-                                <div class="col-sm-2">
-                                    <p><strong>Away Score</strong></p>
-                                    <p>${res.away_score}</p>
-                                </div>
-                                </div>`
-            });
-
-            $('#admin-data').append(card_pred);
-            
-        }
-    });
-    
+   
     $.ajax({
         type: "GET",
         url: "https://soccer.sportmonks.com/api/v2.0/predictions/probabilities/next?api_token=Kb8Hv1vaBWcGHhp1TeKEENOS69Sfsg1YOalzUWPEeMRswTEAogmtCPqMU5Sk",
@@ -53,27 +23,27 @@ $(document).ready(function () {
                         console.log(res);
 
                         let card = `
-                                <div class="row p-5 align-items-enter justify-content-center text-center mb-3" style="border: 2px solid black;">
+                                <div class="row p-5 align-items-enter justify-content-center text-center text-light mb-3 shadow-lg" style="border: 2px solid black; background-color: black;">
                                 <div class="col-sm-2">
                                     <img src="${res.data.localTeam.data.logo_path}" width="50px" class="img-fluid" alt="">
-                                    <p>${res.data.localTeam.data.name}</p>
+                                    <p class="fe_pred_4 rounded">${res.data.localTeam.data.name}</p>
                                 </div>
                                 <div class="col-sm-1 align-items-center justify-content-center"><h4>vs</h4></div>
                                 <div class="col-sm-2">
                                     <img src="${res.data.visitorTeam.data.logo_path}" width="50px" class="img-fluid" alt="">
-                                    <p>${res.data.visitorTeam.data.name}</p>
+                                    <p class="fe_pred_4 rounded">${res.data.visitorTeam.data.name}</p>
                                 </div>
                                 <div class="col-sm-2">
-                                    <p><strong>BTTS</strong></p>
-                                    <p>${rd.predictions.btts}</p>
+                                    <p class="fe_pred rounded"><strong>BTTS</strong></p>
+                                    <p class="fe_pred rounded">${rd.predictions.btts}</p>
                                 </div>
                                 <div class="col-sm-2">
-                                    <p><strong>Over / Under 2.5</strong></p>
-                                    <p>${rd.predictions.over_2_5} / ${rd.predictions.under_2_5}</p>
+                                    <p class="fe_pred_2 rounded"><strong>Over / Under 2.5</strong></p>
+                                    <p class="fe_pred_2 rounded">${rd.predictions.over_2_5} / ${rd.predictions.under_2_5}</p>
                                 </div>
                                 <div class="col-sm-2">
-                                    <p><strong>Date & Time(UTC)</strong></p>
-                                    <p>${res.data.time.starting_at.date.substring(5,)} ${res.data.time.starting_at.time.substring(0,5)}</p>
+                                    <p class="fe_pred_3 rounded"><strong>Date & Time(UTC)</strong></p>
+                                    <p class="fe_pred_3 rounded">${res.data.time.starting_at.date.substring(5,)} ${res.data.time.starting_at.time.substring(0,5)}</p>
                                 </div>
                                 </div>`
 

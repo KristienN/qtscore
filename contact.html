@@ -119,6 +119,7 @@
 
   <main id="main">
     <!-- ======= Contact Section ======= -->
+    <div id="success"></div>
     <section id="contact" class="contact">
       <div class="container">
 
@@ -150,7 +151,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left">
 
-            <form class="php-email-form">
+            <form class="">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -165,12 +166,7 @@
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message" required></textarea>
               </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button id="contact-btn" type="submit">Send Message</button></div>
+              <div class="text-center"><button class="btn btn-md btn-primary rounded-pill my-3" style="background-color: #f72; border: 2px solid black;" type="submit">Send Message</button></div>
             </form>
 
           </div>
@@ -186,7 +182,8 @@
   <footer id="footer" style="background-color: black;">
     <div class="container">
       <h3>Qtscore</h3>
-      <div class="social-links">
+      <a class="p-5 my-3" href="https://qtscore.herokuapp.com/"><h5>Admin | Manage Site</h5></a>
+      <div class="social-links mt-2">
         <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
         <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
         <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
@@ -215,7 +212,6 @@
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Template Main JS File -->

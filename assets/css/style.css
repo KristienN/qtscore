@@ -210,6 +210,33 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+
+/* Frontend */
+
+.fe_pred{
+  border: 5px solid #f72;
+  color: #f72;
+}
+
+.fe_pred_2{
+  border: 5px solid #18d26e;
+  color: #18d26e;
+}
+
+
+.fe_pred_3{
+  border: 5px solid blue;
+  color: blue;
+}
+
+.fe_pred_4{
+  border: 5px solid yellow;
+  color: yellow;
+}
+
+
+
+
 /**
 * Mobile Navigation 
 */
