@@ -1,108 +1,10 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap';
 
 @media (max-width: 768px) {
-    .widgetLeague {
+    .widgetLiveScore {
         min-width: 100%;
     }
 }
-#standingsTabC .flex-table.row .flex-row:not(.first).colorOne {
-    background: #f16a0a;
-    color: white;
-}
-#standingsTabC .flex-table.row:hover .flex-row:not(.first).colorOne {
-    background: #ff6b02;
-    color: white;
-    /*transition: 500ms;*/
-}
-#standingsTabC .flex-table.row .flex-row:not(.first).colorTwo {
-    background: #fc7c1f;
-    color: white;
-}
-#standingsTabC .flex-table.row:hover .flex-row:not(.first).colorTwo {
-    background: #fc7c1f;
-    color: white;
-    /*transition: 500ms;*/
-}
-#standingsTabC .flex-table.row .flex-row:not(.first).colorThree {
-    background: #fc7c1f;
-    color: white;
-}
-#standingsTabC .flex-table.row:hover .flex-row:not(.first).colorThree {
-    background: #fc7c1f;
-    color: white;
-    /*transition: 500ms;*/
-}
-#standingsTabC .flex-table.row .flex-row:not(.first).colorFour {
-    background: #00BFFF;
-    color: white;
-}
-#standingsTabC .flex-table.row:hover .flex-row:not(.first).colorFour {
-    background: #00BFFF;
-    color: white;
-    /*transition: 500ms;*/
-}
-#standingsTabC .flex-table.row .flex-row:not(.first).colorFive {
-    background: #ADD8E6;
-    color: white;
-}
-#standingsTabC .flex-table.row:hover .flex-row:not(.first).colorFive {
-    background: #ADD8E6;
-    color: white;
-    /*transition: 500ms;*/
-}
-#standingsTabC .flex-table.row .flex-row:not(.first).colorSix {
-    background: #8B0000;
-    color: white;
-}
-#standingsTabC .flex-table.row:hover .flex-row:not(.first).colorSix {
-    background: #8B0000;
-    color: white;
-    /*transition: 500ms;*/
-}
-#standingsTabC .flex-table.row .flex-row:not(.first).colorSeven {
-    background: #FF0000;
-    color: white;
-}
-#standingsTabC .flex-table.row:hover .flex-row:not(.first).colorSeven {
-    background: #FF0000;
-    color: white;
-    /*transition: 500ms;*/
-}
-#standingsTabC .flex-table.row .flex-row:not(.first).colorEight {
-    background: #CD5C5C;
-    color: white;
-}
-#standingsTabC .flex-table.row:hover .flex-row:not(.first).colorEight {
-    background: #CD5C5C;
-    color: white;
-    /*transition: 500ms;*/
-}
-#standingsTabC .flex-table.row .flex-row:not(.first).colorNine {
-    background: #E9967A;
-    color: white;
-}
-#standingsTabC .flex-table.row:hover .flex-row:not(.first).colorNine {
-    background: #E9967A;
-    color: white;
-    /*transition: 500ms;*/
-}
-#standingsTabC .flex-table.row .flex-row:not(.first).colorTen {
-    background: #cc0000;
-    color: white;
-}
-#standingsTabC .flex-table.row:hover .flex-row:not(.first).colorTen {
-    background: #cc0000;
-    color: white;
-    /*transition: 500ms;*/
-}
-#standingsTabC .flex-table.header:hover {
-    color: white!important;
-}
-
-#standingsTabC .flex-table:hover a {
-    color: white!important;
-}
-
 .nav-tab-active {
     color: white!important;
     background-color: #004467!important;
@@ -124,7 +26,7 @@
     margin-bottom: 0px;
     border-top: 3px solid #004467;
 }
-.widgetLeague {
+.widgetLiveScore {
     margin: 0;
     font-family: open sans;
     font-size: 1rem;
@@ -140,16 +42,16 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.widgetLeague a {
+.widgetLiveScore a {
     color: black;
     text-decoration: none;
     font-weight: lighter;
 }
-.widgetLeague .titleWidget {
+.widgetLiveScore .titleWidget {
     color: white;
-    background-color: #fc7c1f;
+    background-color: #0088cc;
     display: inline-flex;
-    border-color: #fc7c1f;
+    border-color: #0088cc;
     box-sizing: border-box;
     margin: 0 0.25rem 0 0;
     padding: .5rem 1.25rem;
@@ -157,7 +59,7 @@
     border-top-left-radius: .25rem;
     border-top-right-radius: .25rem;
 }
-.widgetLeague .standing-h2 {
+.widgetLiveScore .standing-h2 {
     text-transform: capitalize;
     position: relative;
     display: inline-block;
@@ -168,7 +70,7 @@
     box-sizing: border-box;
     z-index: 2;
     color: black;
-    border-color: #fc7c1f;
+    border-color: #0088cc;
     padding: 0.5rem 1.25rem;
     margin-top: 0;
     border-top-left-radius: .25rem;
@@ -340,7 +242,7 @@
     -webkit-box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.5) -1.5em 0 0 0, rgba(0, 0, 0, 0.5) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
     box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) -1.5em 0 0 0, rgba(0, 0, 0, 0.75) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
 }
-@media (min-width: 768px) and (max-width: 992px) {} .flex-row.first {
+.flex-row.first {
     background:#004467;
     color:white;
     border-color:#004467;
@@ -357,6 +259,7 @@
     color: white;
     border-color: #004467;
     border-top: solid 1px #f1f1f1;
+    height: initial;
 }
 .flex-table.header.actives {
     border-top: none;
@@ -368,20 +271,22 @@
     text-decoration: underline;
     cursor: pointer;
 }
-.flex-table.row:nth-child(odd) .flex-row:not(.first) {
+#allGame .flex-table.row:nth-child(odd) .flex-row:not(.first),
+#liveGame .flex-table.row:nth-child(odd) .flex-row:not(.first) {
     background: #f4f2f1;
 }
-.flex-table.row:nth-child(odd):hover .flex-row:not(.first) {
-    background: #fc7c1f;
+#allGame .flex-table.row:nth-child(odd):hover .flex-row:not(.first),
+#liveGame .flex-table.row:nth-child(odd):hover .flex-row:not(.first) {
+    background: #0088cc;
     /*transition: 500ms;*/
 }
 .flex-table:hover {
-    background: #fc7c1f;
+    background: #0088cc;
     /*transition: 500ms;*/
     color: white!important;
 }
 .table__body .flex-table:hover .flex-row.teams {
-    background: #fc7c1f;
+    background: #0088cc;
     /*transition: 500ms;*/
     color: white!important;
 }
@@ -392,36 +297,20 @@
     background-color: #004467;
 }
 .table__body .flex-table:hover .flex-row.teams {
-    background: #fc7c1f;
+    background: #0088cc;
     /*transition: 500ms;*/
     color: white!important;
 }
 .table__body .flex-table.header:hover .flex-row.teams {
     background-color: #004467;
 }
-.widgetLeague {
+.widgetLiveScore {
     font-size: 13px;
     font-weight: bold;
 }
 .tablele-container {
     overflow: auto;
     display: grid;
-}
-.flex-table.header {
-    display: flex;
-    user-select: none;
-    z-index: 2;
-    top: 0;
-    height: 28px;
-    border-top: 0px solid #004467;
-}
-#standingsTabC .flex-table.header {
-    display: flex;
-    user-select: none;
-    z-index: 2;
-    top: 0;
-    height: 28px;
-    border-top: 0px solid #004467;
 }
 .table__body {
     display: grid;
@@ -436,13 +325,6 @@
 }
 .header .flex-row.first,
 .table__body .flex-row.first {
-    position: sticky;
-    position: -webkit-sticky;
-    z-index: 1;
-    left: 0;
-}
-.header .flex-row.first-sticky,
-.table__body .flex-row.first-sticky {
     position: sticky;
     position: -webkit-sticky;
     z-index: 1;
@@ -513,49 +395,50 @@
     font-family: open sans;
     padding-left: 1rem;
 }
-
-/* START #fixturesTabC */
-
-#fixturesTabC .table__body_fixtures .winningMatchStyle.flex-row {
+.matchIsLive {
+    color: #ED2939;
     font-weight: bold;
 }
-#fixturesTabC .table__body_fixtures .flex-table:hover {
+/* START #allGame */
+
+#allGame .table__body_fixtures .flex-table:hover {
     cursor: pointer;
 }
-#fixturesTabC .table__body_fixtures .flex-table {
+#allGame .table__body_fixtures .flex-table {
     color: black;
     text-decoration: none;
     font-weight: lighter;
 }
-#fixturesTabC .match_time_text_align {
+#allGame .match_time_text_align {
     text-align: center;
 }
-#fixturesTabC {
+#allGame {
     font-size: 13px;
     font-weight: bold;
 }
-#fixturesTabC {
-    width: 100%!important;
-}
-#fixturesTabC .table__body_fixtures {
+#allGame .table__body_fixtures {
     display: grid;
 }
-#fixturesTabC .flex-row {
+#allGame .flex-row {
     padding-left: 0.5rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
-#fixturesTabC #fixturesContentTable .tablele-container {
+#allGame #allGameContentTable .tablele-container {
     padding-top: 0.25rem;
     margin-bottom: 0px;
     border-top: 3px solid #004467;
 }
-#fixturesTabC .table__body_fixtures .winningMatchStyle.flex-row {
+#allGame .finishedMatchScore {
     font-weight: bold;
+}
+#allGame .firstHalfStyle {
+    color: gray;
 }
 .table__body_fixtures .flex-row.matchDetails {
     justify-content: space-around;
-    width: 70px;
+    width: 80px;
+    text-align: center;
 }
 .table__body_fixtures .flex-row.matchHomeTeam {
     justify-content: flex-end;
@@ -569,46 +452,70 @@
     justify-content: flex-start;
     flex: 1;
 }
-#fixturesTabC .fixtureslineThrough {
+#allGame .fixtureslineThrough {
     text-decoration: line-through;
 }
-/* END #fixturesTabC */
+#allGame .table__body_fixtures .winningMatchStyle.flex-row {
+    font-weight: bold;
+}
+#allGame .countryOfTeams {
+    text-transform: uppercase;
+    margin-right: 5px;
+}
+#allGame .matchDelimiter {
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+}
+#allGame .matchPen {
+    font-weight: normal;
+}
+#allGame .flex-table.header {
+    display: flex;
+    user-select: none;
+    z-index: 2;
+    top: 0;
+    border-top: 0px solid #004467;
+}
+/* END #allGame */
 
-/* START #resultsTabC */
+/* START #liveGame */
 
-#resultsTabC .table__body_results .flex-table:hover {
+#liveGame .countryOfTeams {
+    text-transform: uppercase;
+    margin-right: 5px;
+}
+
+#liveGame .table__body_results .flex-table:hover {
     cursor: pointer;
 }
-#resultsTabC .table__body_results .flex-table {
+#liveGame .table__body_results .flex-table {
     color: black;
     text-decoration: none;
     font-weight: lighter;
 }
-#resultsTabC .match_time_text_align {
+#liveGame .match_time_text_align {
     text-align: center;
 }
-#resultsTabC {
+#liveGame {
     font-size: 13px;
     font-weight: bold;
 }
-#resultsTabC {
-    width: 100%!important;
-}
-#resultsTabC .table__body_results {
+#liveGame .table__body_results {
     display: grid;
 }
-#resultsTabC .flex-row {
+#liveGame .flex-row {
     padding-left: 0.5rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
-#resultsTabC #resultsContentTable .tablele-container {
+#liveGame #liveGameContentTable .tablele-container {
     padding-top: 0.25rem;
     margin-bottom: 0px;
     border-top: 3px solid #004467;
 }
-#resultsTabC .table__body_results .winningMatchStyle.flex-row {
-    font-weight: bold;
+#liveGame .firstHalfStyle {
+    color: gray;
 }
 .table__body_results .flex-row.matchDetails {
     justify-content: space-around;
@@ -626,7 +533,142 @@
     justify-content: flex-start;
     flex: 1;
 }
-#resultsTabC slineThrough {
+#liveGame slineThrough {
     text-decoration: line-through;
 }
-/* END #resultsTabC */
+#liveGame .table__body_fixtures .matchHomeTeam,
+#liveGame .table__body_fixtures .matchAwayTeam {
+    font-weight: normal;
+}
+#liveGame .table__body_fixtures .winningMatchStyle.flex-row {
+    font-weight: bold;
+}
+#liveGame .flex-table.header {
+    display: flex;
+    user-select: none;
+    z-index: 2;
+    top: 0;
+    border-top: 0px solid #004467;
+}
+/* END #liveGame */
+
+.countryListDisplays {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.countryLogo {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.countryLogo {
+    height: 20px;
+    padding-left: 30px;
+    margin-left: 0.75rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: brightness(98%);
+}
+.countryListDisplays .keyOfTeam {
+    flex: 1;
+    display: flex;
+    padding-right: 0.5rem;
+}
+.countryListDisplays {
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 1;
+    left: 0;
+}
+#liveGame .table__body_fixtures .matchHomeTeam,
+#liveGame .table__body_fixtures .matchAwayTeam,
+#allGame .table__body_fixtures .matchHomeTeam,
+#allGame .table__body_fixtures .matchAwayTeam {
+    min-width: 100px;
+}
+#liveScoreCalendarContainer {
+    margin-bottom: .25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#liveScoreCalendarContainer a {
+    width: 100%;
+    display: inline;
+    text-align: center;
+}
+.activeDateCalendar {
+    background-color: red;
+}
+.callendarDays {
+    color: white!important;
+    background-color: #0088cc;
+    display: inline-flex;
+    border-color: #0088cc;
+    box-sizing: border-box;
+    margin: 0 0.25rem 0 0;
+    padding: .5rem 1.25rem;
+    font-weight: bold;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+    box-sizing: border-box;
+}
+.callendarDaysActive {
+    color: white!important;
+    background-color: #004467!important;
+}
+@media (max-width: 768px) {
+    .break-mobile-grid {
+        flex-basis: 100%;
+        height: 0;
+    }
+    .container-mobile-grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .item-mobile-grid {
+        flex-grow: 1;
+    }
+    .item-wide-mobile-grid {
+        flex-grow: 3;
+    }
+    .d-none-mobile-div {
+        display: none;
+    }
+    .d-show-mobile-div {
+        display: block;
+    }
+    #allGame .table__body_fixtures .flex-row.matchAwayTeam.firstHalfStyle.mobile-firstHalfStyle,
+    #liveGame .table__body_fixtures .flex-row.matchAwayTeam.firstHalfStyle.mobile-firstHalfStyle {
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+    #liveScoreCalendarContainer {
+        display: none;
+    }
+}
+@media (max-width: 1200px) {
+    .callendarDays {
+        color: white!important;
+        background-color: #0088cc;
+        display: inline-flex;
+        border-color: #0088cc;
+        box-sizing: border-box;
+        margin: 0 0.25rem 0 0;
+        padding: .5rem .25rem;
+        font-weight: bold;
+        border-top-left-radius: .25rem;
+        border-top-right-radius: .25rem;
+        border-bottom-left-radius: .25rem;
+        border-bottom-right-radius: .25rem;
+        box-sizing: border-box;
+    }
+}

@@ -1,14 +1,112 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap';
 
 @media (max-width: 768px) {
-    .widgetLiveScore {
+    .widgetLeague {
         min-width: 100%;
     }
 }
+#standingsTabC .flex-table.row .flex-row:not(.first).colorOne {
+    background: #00008B;
+    color: white;
+}
+#standingsTabC .flex-table.row:hover .flex-row:not(.first).colorOne {
+    background: #00008B;
+    color: white;
+    /*transition: 500ms;*/
+}
+#standingsTabC .flex-table.row .flex-row:not(.first).colorTwo {
+    background: #0000FF;
+    color: white;
+}
+#standingsTabC .flex-table.row:hover .flex-row:not(.first).colorTwo {
+    background: #0000FF;
+    color: white;
+    /*transition: 500ms;*/
+}
+#standingsTabC .flex-table.row .flex-row:not(.first).colorThree {
+    background: #1E90FF;
+    color: white;
+}
+#standingsTabC .flex-table.row:hover .flex-row:not(.first).colorThree {
+    background: #1E90FF;
+    color: white;
+    /*transition: 500ms;*/
+}
+#standingsTabC .flex-table.row .flex-row:not(.first).colorFour {
+    background: #00BFFF;
+    color: white;
+}
+#standingsTabC .flex-table.row:hover .flex-row:not(.first).colorFour {
+    background: #00BFFF;
+    color: white;
+    /*transition: 500ms;*/
+}
+#standingsTabC .flex-table.row .flex-row:not(.first).colorFive {
+    background: #ADD8E6;
+    color: white;
+}
+#standingsTabC .flex-table.row:hover .flex-row:not(.first).colorFive {
+    background: #ADD8E6;
+    color: white;
+    /*transition: 500ms;*/
+}
+#standingsTabC .flex-table.row .flex-row:not(.first).colorSix {
+    background: #8B0000;
+    color: white;
+}
+#standingsTabC .flex-table.row:hover .flex-row:not(.first).colorSix {
+    background: #8B0000;
+    color: white;
+    /*transition: 500ms;*/
+}
+#standingsTabC .flex-table.row .flex-row:not(.first).colorSeven {
+    background: #FF0000;
+    color: white;
+}
+#standingsTabC .flex-table.row:hover .flex-row:not(.first).colorSeven {
+    background: #FF0000;
+    color: white;
+    /*transition: 500ms;*/
+}
+#standingsTabC .flex-table.row .flex-row:not(.first).colorEight {
+    background: #CD5C5C;
+    color: white;
+}
+#standingsTabC .flex-table.row:hover .flex-row:not(.first).colorEight {
+    background: #CD5C5C;
+    color: white;
+    /*transition: 500ms;*/
+}
+#standingsTabC .flex-table.row .flex-row:not(.first).colorNine {
+    background: #E9967A;
+    color: white;
+}
+#standingsTabC .flex-table.row:hover .flex-row:not(.first).colorNine {
+    background: #E9967A;
+    color: white;
+    /*transition: 500ms;*/
+}
+#standingsTabC .flex-table.row .flex-row:not(.first).colorTen {
+    background: #cc0000;
+    color: white;
+}
+#standingsTabC .flex-table.row:hover .flex-row:not(.first).colorTen {
+    background: #cc0000;
+    color: white;
+    /*transition: 500ms;*/
+}
+#standingsTabC .flex-table.header:hover {
+    color: white!important;
+}
+
+#standingsTabC .flex-table:hover a {
+    color: white!important;
+}
+
 .nav-tab-active {
     color: white!important;
-    background-color: #c55200!important;
-    border: 1px solid #c55200!important;
+    background-color: #004467!important;
+    border: 1px solid #004467!important;
 }
 .nav-tab {
     border: 1px solid black;
@@ -24,9 +122,9 @@
 .nav-tab-wrapper {
     padding-top: 0.25rem;
     margin-bottom: 0px;
-    border-top: 3px solid #c55200;
+    border-top: 3px solid #004467;
 }
-.widgetLiveScore {
+.widgetLeague {
     margin: 0;
     font-family: open sans;
     font-size: 1rem;
@@ -42,16 +140,16 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.widgetLiveScore a {
+.widgetLeague a {
     color: black;
     text-decoration: none;
     font-weight: lighter;
 }
-.widgetLiveScore .titleWidget {
+.widgetLeague .titleWidget {
     color: white;
-    background-color: #fc7c1f;
+    background-color: #0088cc;
     display: inline-flex;
-    border-color: #fc7c1f;
+    border-color: #0088cc;
     box-sizing: border-box;
     margin: 0 0.25rem 0 0;
     padding: .5rem 1.25rem;
@@ -59,7 +157,7 @@
     border-top-left-radius: .25rem;
     border-top-right-radius: .25rem;
 }
-.widgetLiveScore .standing-h2 {
+.widgetLeague .standing-h2 {
     text-transform: capitalize;
     position: relative;
     display: inline-block;
@@ -70,7 +168,7 @@
     box-sizing: border-box;
     z-index: 2;
     color: black;
-    border-color: #fc7c1f;
+    border-color: #0088cc;
     padding: 0.5rem 1.25rem;
     margin-top: 0;
     border-top-left-radius: .25rem;
@@ -242,10 +340,10 @@
     -webkit-box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.5) -1.5em 0 0 0, rgba(0, 0, 0, 0.5) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
     box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) -1.5em 0 0 0, rgba(0, 0, 0, 0.75) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
 }
-.flex-row.first {
-    background:#c55200;
+@media (min-width: 768px) and (max-width: 992px) {} .flex-row.first {
+    background:#004467;
     color:white;
-    border-color:#c55200;
+    border-color:#004467;
     font-weight:bold;
 }
 .flex-table:last-of-type {
@@ -255,38 +353,35 @@
     border-top: solid 1px white;
 }
 .flex-table.header {
-    background: #c55200;
+    background: #004467;
     color: white;
-    border-color: #c55200;
+    border-color: #004467;
     border-top: solid 1px #f1f1f1;
-    height: initial;
 }
 .flex-table.header.actives {
     border-top: none;
 }
 .flex-table.header:hover {
-    background: #c55200;
+    background: #004467;
 }
 .flex-table.header .flex-row:hover {
     text-decoration: underline;
     cursor: pointer;
 }
-#allGame .flex-table.row:nth-child(odd) .flex-row:not(.first),
-#liveGame .flex-table.row:nth-child(odd) .flex-row:not(.first) {
+.flex-table.row:nth-child(odd) .flex-row:not(.first) {
     background: #f4f2f1;
 }
-#allGame .flex-table.row:nth-child(odd):hover .flex-row:not(.first),
-#liveGame .flex-table.row:nth-child(odd):hover .flex-row:not(.first) {
-    background: #fc7c1f;
+.flex-table.row:nth-child(odd):hover .flex-row:not(.first) {
+    background: #0088cc;
     /*transition: 500ms;*/
 }
 .flex-table:hover {
-    background: #fc7c1f;
+    background: #0088cc;
     /*transition: 500ms;*/
     color: white!important;
 }
 .table__body .flex-table:hover .flex-row.teams {
-    background: #fc7c1f;
+    background: #0088cc;
     /*transition: 500ms;*/
     color: white!important;
 }
@@ -294,23 +389,39 @@
     background-color: white;
 }
 .header .flex-row.teams {
-    background-color: #c55200;
+    background-color: #004467;
 }
 .table__body .flex-table:hover .flex-row.teams {
-    background: #fc7c1f;
+    background: #0088cc;
     /*transition: 500ms;*/
     color: white!important;
 }
 .table__body .flex-table.header:hover .flex-row.teams {
-    background-color: #c55200;
+    background-color: #004467;
 }
-.widgetLiveScore {
+.widgetLeague {
     font-size: 13px;
     font-weight: bold;
 }
 .tablele-container {
     overflow: auto;
     display: grid;
+}
+.flex-table.header {
+    display: flex;
+    user-select: none;
+    z-index: 2;
+    top: 0;
+    height: 28px;
+    border-top: 0px solid #004467;
+}
+#standingsTabC .flex-table.header {
+    display: flex;
+    user-select: none;
+    z-index: 2;
+    top: 0;
+    height: 28px;
+    border-top: 0px solid #004467;
 }
 .table__body {
     display: grid;
@@ -325,6 +436,13 @@
 }
 .header .flex-row.first,
 .table__body .flex-row.first {
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 1;
+    left: 0;
+}
+.header .flex-row.first-sticky,
+.table__body .flex-row.first-sticky {
     position: sticky;
     position: -webkit-sticky;
     z-index: 1;
@@ -395,50 +513,49 @@
     font-family: open sans;
     padding-left: 1rem;
 }
-.matchIsLive {
-    color: #ED2939;
+
+/* START #fixturesTabC */
+
+#fixturesTabC .table__body_fixtures .winningMatchStyle.flex-row {
     font-weight: bold;
 }
-/* START #allGame */
-
-#allGame .table__body_fixtures .flex-table:hover {
+#fixturesTabC .table__body_fixtures .flex-table:hover {
     cursor: pointer;
 }
-#allGame .table__body_fixtures .flex-table {
+#fixturesTabC .table__body_fixtures .flex-table {
     color: black;
     text-decoration: none;
     font-weight: lighter;
 }
-#allGame .match_time_text_align {
+#fixturesTabC .match_time_text_align {
     text-align: center;
 }
-#allGame {
+#fixturesTabC {
     font-size: 13px;
     font-weight: bold;
 }
-#allGame .table__body_fixtures {
+#fixturesTabC {
+    width: 100%!important;
+}
+#fixturesTabC .table__body_fixtures {
     display: grid;
 }
-#allGame .flex-row {
+#fixturesTabC .flex-row {
     padding-left: 0.5rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
-#allGame #allGameContentTable .tablele-container {
+#fixturesTabC #fixturesContentTable .tablele-container {
     padding-top: 0.25rem;
     margin-bottom: 0px;
-    border-top: 3px solid #c55200;
+    border-top: 3px solid #004467;
 }
-#allGame .finishedMatchScore {
+#fixturesTabC .table__body_fixtures .winningMatchStyle.flex-row {
     font-weight: bold;
-}
-#allGame .firstHalfStyle {
-    color: gray;
 }
 .table__body_fixtures .flex-row.matchDetails {
     justify-content: space-around;
-    width: 80px;
-    text-align: center;
+    width: 70px;
 }
 .table__body_fixtures .flex-row.matchHomeTeam {
     justify-content: flex-end;
@@ -452,70 +569,46 @@
     justify-content: flex-start;
     flex: 1;
 }
-#allGame .fixtureslineThrough {
+#fixturesTabC .fixtureslineThrough {
     text-decoration: line-through;
 }
-#allGame .table__body_fixtures .winningMatchStyle.flex-row {
-    font-weight: bold;
-}
-#allGame .countryOfTeams {
-    text-transform: uppercase;
-    margin-right: 5px;
-}
-#allGame .matchDelimiter {
-    flex: 1;
-    display: flex;
-    flex-flow: column nowrap;
-}
-#allGame .matchPen {
-    font-weight: normal;
-}
-#allGame .flex-table.header {
-    display: flex;
-    user-select: none;
-    z-index: 2;
-    top: 0;
-    border-top: 0px solid #c55200;
-}
-/* END #allGame */
+/* END #fixturesTabC */
 
-/* START #liveGame */
+/* START #resultsTabC */
 
-#liveGame .countryOfTeams {
-    text-transform: uppercase;
-    margin-right: 5px;
-}
-
-#liveGame .table__body_results .flex-table:hover {
+#resultsTabC .table__body_results .flex-table:hover {
     cursor: pointer;
 }
-#liveGame .table__body_results .flex-table {
+#resultsTabC .table__body_results .flex-table {
     color: black;
     text-decoration: none;
     font-weight: lighter;
 }
-#liveGame .match_time_text_align {
+#resultsTabC .match_time_text_align {
     text-align: center;
 }
-#liveGame {
+#resultsTabC {
     font-size: 13px;
     font-weight: bold;
 }
-#liveGame .table__body_results {
+#resultsTabC {
+    width: 100%!important;
+}
+#resultsTabC .table__body_results {
     display: grid;
 }
-#liveGame .flex-row {
+#resultsTabC .flex-row {
     padding-left: 0.5rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
-#liveGame #liveGameContentTable .tablele-container {
+#resultsTabC #resultsContentTable .tablele-container {
     padding-top: 0.25rem;
     margin-bottom: 0px;
-    border-top: 3px solid #c55200;
+    border-top: 3px solid #004467;
 }
-#liveGame .firstHalfStyle {
-    color: gray;
+#resultsTabC .table__body_results .winningMatchStyle.flex-row {
+    font-weight: bold;
 }
 .table__body_results .flex-row.matchDetails {
     justify-content: space-around;
@@ -533,142 +626,7 @@
     justify-content: flex-start;
     flex: 1;
 }
-#liveGame slineThrough {
+#resultsTabC slineThrough {
     text-decoration: line-through;
 }
-#liveGame .table__body_fixtures .matchHomeTeam,
-#liveGame .table__body_fixtures .matchAwayTeam {
-    font-weight: normal;
-}
-#liveGame .table__body_fixtures .winningMatchStyle.flex-row {
-    font-weight: bold;
-}
-#liveGame .flex-table.header {
-    display: flex;
-    user-select: none;
-    z-index: 2;
-    top: 0;
-    border-top: 0px solid #c55200;
-}
-/* END #liveGame */
-
-.countryListDisplays {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-}
-.countryLogo {
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    display: flex;
-    flex-flow: column nowrap;
-}
-.countryLogo {
-    height: 20px;
-    padding-left: 30px;
-    margin-left: 0.75rem;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    filter: brightness(98%);
-}
-.countryListDisplays .keyOfTeam {
-    flex: 1;
-    display: flex;
-    padding-right: 0.5rem;
-}
-.countryListDisplays {
-    position: sticky;
-    position: -webkit-sticky;
-    z-index: 1;
-    left: 0;
-}
-#liveGame .table__body_fixtures .matchHomeTeam,
-#liveGame .table__body_fixtures .matchAwayTeam,
-#allGame .table__body_fixtures .matchHomeTeam,
-#allGame .table__body_fixtures .matchAwayTeam {
-    min-width: 100px;
-}
-#liveScoreCalendarContainer {
-    margin-bottom: .25rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#liveScoreCalendarContainer a {
-    width: 100%;
-    display: inline;
-    text-align: center;
-}
-.activeDateCalendar {
-    background-color: red;
-}
-.callendarDays {
-    color: white!important;
-    background-color: #fc7c1f;
-    display: inline-flex;
-    border-color: #fc7c1f;
-    box-sizing: border-box;
-    margin: 0 0.25rem 0 0;
-    padding: .5rem 1.25rem;
-    font-weight: bold;
-    border-top-left-radius: .25rem;
-    border-top-right-radius: .25rem;
-    border-bottom-left-radius: .25rem;
-    border-bottom-right-radius: .25rem;
-    box-sizing: border-box;
-}
-.callendarDaysActive {
-    color: white!important;
-    background-color: #c55200!important;
-}
-@media (max-width: 768px) {
-    .break-mobile-grid {
-        flex-basis: 100%;
-        height: 0;
-    }
-    .container-mobile-grid {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .item-mobile-grid {
-        flex-grow: 1;
-    }
-    .item-wide-mobile-grid {
-        flex-grow: 3;
-    }
-    .d-none-mobile-div {
-        display: none;
-    }
-    .d-show-mobile-div {
-        display: block;
-    }
-    #allGame .table__body_fixtures .flex-row.matchAwayTeam.firstHalfStyle.mobile-firstHalfStyle,
-    #liveGame .table__body_fixtures .flex-row.matchAwayTeam.firstHalfStyle.mobile-firstHalfStyle {
-        justify-content: center;
-        text-align: center;
-        margin: 0 auto;
-    }
-    #liveScoreCalendarContainer {
-        display: none;
-    }
-}
-@media (max-width: 1200px) {
-    .callendarDays {
-        color: white!important;
-        background-color: #fc7c1f;
-        display: inline-flex;
-        border-color: #fc7c1f;
-        box-sizing: border-box;
-        margin: 0 0.25rem 0 0;
-        padding: .5rem .25rem;
-        font-weight: bold;
-        border-top-left-radius: .25rem;
-        border-top-right-radius: .25rem;
-        border-bottom-left-radius: .25rem;
-        border-bottom-right-radius: .25rem;
-        box-sizing: border-box;
-    }
-}
+/* END #resultsTabC */
