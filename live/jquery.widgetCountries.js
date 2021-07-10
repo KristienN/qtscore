@@ -540,7 +540,7 @@
         // Link to server data
         countriesAjaxURL: 'https://apiv2.apifootball.com/?',
         // Location to your HTML (can be set here but recomended to put it where your activate your widget - index.html)
-        widgetLeagueLocation: null,
+        widgetLeagueLocation: 'index.html',
         // Background color for your Countries Widget
         backgroundColor: null,
         // Set widgetLiveScore target
