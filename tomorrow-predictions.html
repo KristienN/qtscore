@@ -5,10 +5,13 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Qtscore - Football Tips, Scores & Predictions</title>
-  <link rel="shortcut icon" type="image/png" href="favicon-32x32.ico"/>
+  <title>Qtscore - Today's Predictions</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -58,16 +61,17 @@
       </div>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto" href="./about.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="./index.html">Home</a></li>
           <li><a class="nav-link scrollto" href="./live/index.html">Live Scores</a></li>
-          <li class="dropdown"><a href="#"><span>Predictions</span> <i class="bi bi-chevron-down"></i></a>
+          <li><a class="nav-link scrollto" href="tomorrow-predictions.html">Tomorrow's Predictions</a></li>
+          <li class="dropdown active rounded-pill"><a href="#"><span>Predictions</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="football-predictions.html">Today's Predictions</a></li>
               <li><a href="admin-predictions.html">Our Personal Predictions</a></li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto " href="subscriptions.html">Subscriptions</a></li>
-          <li><a class="nav-link scrollto active" href="contact.html">Get in Touch</a></li>
+          <li><a class="nav-link scrollto" href="subscriptions.html">Subscriptions</a></li>
+          <li><a class="nav-link scrollto" href="contact.html">Get in Touch</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -75,124 +79,35 @@
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-end align-items-center">
-    <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
-
-      <!-- Slide 1 -->
-      <div class="carousel-item active">
-        <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown"><span>QtScore</span></h2>
-          <p class="animate__animated fanimate__adeInUp">We are the best source of well-researched football statistics, analysis and free football prediction site. Start winning now.</p>
-          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">View Predictions</a>
-        </div>
-      </div>
-
-      <!-- Slide 2 -->
-      <div class="carousel-item">
-        <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">About Us</h2>
-          <p class="animate__animated animate__fadeInUp">We are a team of seasoned sports prediction experts with years of experience providing consistent winning predictions. We are Qtscore.</p>
-          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
-        </div>
-      </div>
-
-      <!-- Slide 3 -->
-      <div class="carousel-item">
-        <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">Our Mission</h2>
-          <p class="animate__animated animate__fadeInUp">To ensure consistent winning and provision of revenue for our subscribers, followers, and everyone that enjoys winning.</p>
-          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
-        </div>
-      </div>
-
-      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
-      </a>
-
-      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
-      </a>
-
-    </div>
-  </section><!-- End Hero -->
-
   <main id="main">
-    <!-- ======= Contact Section ======= -->
-    <div id="success"></div>
-    <section id="contact" class="contact">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
       <div class="container">
 
-        <div class="section-title" data-aos="zoom-out">
-          <h2>Contact</h2>
-          <p>Contact Us</p>
-        </div>
-
-        <div class="row mt-5">
-
-          <div class="col-lg-4" data-aos="fade-right">
-            <div class="info">
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>qtscore@gmail.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-whatsapp"></i>
-                <h4>Call or WhatsApp:</h4>
-                <p>+234 8161102425</p>
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left">
-
-            <form class="">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="text-center"><button class="btn btn-md btn-primary rounded-pill my-3" style="background-color: #f72; border: 2px solid black;" type="submit">Send Message</button></div>
-            </form>
-
-          </div>
-
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Tomorrow's Predictions</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Tomorrow's Predictions</li>
+          </ol>
         </div>
 
       </div>
-    </section><!-- End Contact Section -->
+    </section><!-- End Breadcrumbs -->
 
-          <!-- ADVERT!! -->
-    <section class="p-5 d-flex align-items-center justify-content-center">
+    <section class="inner-page">
       <div class="container">
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- auto -->
-        <ins class="adsbygoogle"
-            style="display:block"
-            data-ad-client="ca-pub-2740507829180245"
-            data-ad-slot="9784961614"
-            data-ad-format="auto"
-            data-full-width-responsive="true"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
+        <!-- <h2 class="pb-5">Danish Superliga</h2>
+        <div id="dan-data" class="mb-5"></div>
+        
+        <h2 class="pb-5">Scottish Premiership</h2>
+        <div id="scot-data">
+        </div> -->
+        <p class="text-center p-5">No Data Available Yet</p>
+
       </div>
     </section>
-
 
   </main><!-- End #main -->
 
@@ -225,16 +140,21 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
+<script
+			  src="https://code.jquery.com/jquery-3.6.0.js"
+			  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+			  crossorigin="anonymous"></script>
+        
   <script src="assets/vendor/aos/aos.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/contact.js"></script>
+  <!-- <script src="assets/js/prediction-api.js"></script> -->
 
   <!-- advertising I4OVoxYf4Vce-FUwySy-uo_rsdcibQuVoyatSxDS54Pn34nlt8pUCmJTJ4mxaQKUjF0vMSkSkOHOkuAsLcPh4Q==-->
 							<script data-cfasync="false"  id="clevernt" type="text/javascript">

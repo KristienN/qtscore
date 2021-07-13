@@ -6,25 +6,37 @@ $(document).ready(function () {
         success: function (response) {
             response.forEach(res => {
                 $card = `
-                                <div class="row p-5 align-items-enter justify-content-center text-center mb-3" style="border: 2px solid black;">
-                                <div class="col-sm-2">
-                                    <h4>${res.home_team}</h4>
+                                <div class="row p-5 align-items-center justify-content-center text-center mb-3 text-light" style="border: 2px solid black; background-color: black;">
+                                <div class="col-md-2 d-flex flex-column align-items-center justify-content-center">
+                                    <p><strong>Country</strong></p>
+                                    <img src="${res.country}" class="img-fluid">
                                 </div>
-                                <div class="col-sm-1 align-items-center justify-content-center"><h4>vs</h4></div>
-                                <div class="col-sm-2">
-                                    <h4>${res.away_team}</h4>
+                                <div class="col-md-2">
+                                    <h4 class="fe_pred">${res.home_team}</h4>
                                 </div>
-                                <div class="col-sm-2">
-                                    <p><strong>Home Score</strong></p>
-                                    <p>${res.home_score}</p>
+                                <div class="col-md-1 align-items-center justify-content-center"><h4>vs</h4></div>
+                                <div class="col-md-2">
+                                    <h4 class="fe_pred">${res.away_team}</h4>
                                 </div>
-                                <div class="col-sm-2">
-                                    <p><strong>Away Score</strong></p>
-                                    <p>${res.away_score}</p>
+                                <div class="col-md-2">
+                                    <p class="fe_pred_2"><strong>Tip</strong></p>
+                                    <p class="fe_pred_2">${res.tip}</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="fe_pred_3"><strong>Date</strong></p>
+                                    <p class="fe_pred_3">${res.date.toString().substring(0,10)}</p>
                                 </div>
                                 </div>`
                 
-                $('#admin-data').append($card);
+
+                if(res.page == 1){
+                    $('#admin-data').append($card);
+                }
+
+                if(res.page == 2){
+                    $('#tomorrow-data').append($card);
+                }
+                
             });
 
             
