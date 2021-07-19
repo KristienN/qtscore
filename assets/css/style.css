@@ -214,12 +214,17 @@ h1, h2, h3, h4, h5, h6 {
 /* Frontend */
 
 .fe_pred{
-  border: 5px solid #f72;
+  border: 2px solid #f72;
   color: #f72;
 }
 
+th{
+  background-color: black;
+}
+
 .fe_pred_2{
-  border: 5px solid #18d26e;
+  border: 2px solid #18d26e;
+  width: auto;
   color: #18d26e;
 }
 
@@ -230,7 +235,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fe_pred_4{
-  border: 5px solid yellow;
+  border: 5px solid rgb(208, 255, 0);
   color: yellow;
 }
 

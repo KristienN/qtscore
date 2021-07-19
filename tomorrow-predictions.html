@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Qtscore - Today's Predictions</title>
+  <title>Qtscore - Tomorrow's Predictions</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -61,15 +61,10 @@
       </div>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto" href="./index.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="./live/index.html">Live Scores</a></li>
-          <li><a class="nav-link scrollto" href="tomorrow-predictions.html">Tomorrow's Predictions</a></li>
-          <li class="dropdown active rounded-pill"><a href="#"><span>Predictions</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="football-predictions.html">Today's Predictions</a></li>
-              <li><a href="admin-predictions.html">Our Personal Predictions</a></li>
-            </ul>
-          </li>
+          <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="todays-predictions.html">Today's Predictions</a></li>
+          <li><a class="nav-link scrollto active" href="tomorrow-predictions.html">Tomorrow's Predictions</a></li>
+          <li><a class="nav-link scrollto" href="upcoming-predictions.html">Upcoming Predictions</a></li>
           <li><a class="nav-link scrollto" href="subscriptions.html">Subscriptions</a></li>
           <li><a class="nav-link scrollto" href="contact.html">Get in Touch</a></li>
         </ul>
@@ -98,14 +93,25 @@
 
     <section class="inner-page">
       <div class="container">
-        <!-- <h2 class="pb-5">Danish Superliga</h2>
-        <div id="dan-data" class="mb-5"></div>
-        
-        <h2 class="pb-5">Scottish Premiership</h2>
-        <div id="scot-data">
-        </div> -->
-        <p class="text-center p-5">No Data Available Yet</p>
+      <div id="tomorrow-data" class="mb-5"></div>
 
+      </div>
+    </section>
+    
+    <!-- ADVERT!! -->
+    <section class="p-5 d-flex align-items-center justify-content-center">
+      <div class="container">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- auto -->
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-2740507829180245"
+            data-ad-slot="9784961614"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
       </div>
     </section>
 
@@ -115,13 +121,10 @@
   <footer id="footer" style="background-color: black;">
     <div class="container">
       <h3>Qtscore</h3>
-      <a class="p-5 my-3" href="https://qtscore.herokuapp.com/"><h5>Admin | Manage Site</h5></a>
       <div class="social-links mt-2">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://twitter.com/qtscore?lang=en" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.facebook.com/pg/qtscore2/posts/" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/qtscore/?hl=en" class="instagram"><i class="bx bxl-instagram"></i></a>
       </div>
       <div class="copyright">
         &copy; Copyright <strong><span>Qtscore</span></strong>. All Rights Reserved
@@ -154,7 +157,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <!-- <script src="assets/js/prediction-api.js"></script> -->
+  <script src="assets/js/admin.js"></script>
 
   <!-- advertising I4OVoxYf4Vce-FUwySy-uo_rsdcibQuVoyatSxDS54Pn34nlt8pUCmJTJ4mxaQKUjF0vMSkSkOHOkuAsLcPh4Q==-->
 							<script data-cfasync="false"  id="clevernt" type="text/javascript">
