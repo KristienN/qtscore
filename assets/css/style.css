@@ -6,6 +6,10 @@ body {
   color: #444444;
 }
 
+* ::selection{
+  background-color: #999;
+}
+
 a {
   color: #ef6603;
   text-decoration: none;

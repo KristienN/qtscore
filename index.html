@@ -117,14 +117,48 @@
 
     <!-- ======= Cta Section ======= -->
     <section id="cta" class="cta">
-      <div class="container">
+      <div class="container d-flex flex-column justify-content-center">
       <div class="d-md-flex align-items-center justify-content-evenly p-5 gap-5">
           <a href="todays-predictions.html" style="background-color: #f72;" class="btn btn-lg btn-warning rounded-pill p-3 mb-3"> <i class="ri ri-football-line"></i> Today's Predictions</a>
           <a href="tomorrow-predictions.html" style="background-color: #f72;" class="btn btn-lg btn-warning rounded-pill p-3 mb-3"><i class="ri ri-football-line"></i> Tomorrow's Predictions</a>
           <a href="upcoming-predictions.html" style="background-color: #f72;" class="btn btn-lg btn-warning rounded-pill p-3 mb-3"><i class="ri ri-football-line"></i> Upcoming Predictions</a>
         </div>
 
-        <div class="row p-5" data-aos="zoom-out" style="background: #f72;">
+        <h2 class="text-light">A Glance at Today...</h2>
+
+        <div class="text-center my-3">
+          <table id="today-f" class="tdf">
+              <thead>
+                <tr>
+                  <th>Country</th>
+                  <th style="color: yellow">Home Team</th>
+                  <th></th>
+                  <th style="color: yellow">Away Team</th>
+                  <th style="color: #18d26e">Tip</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+        </table>
+        </div>
+
+        <!-- <h2 class="mt-5 text-light">A Glance at Tomorrow...</h2>
+
+        <div class="mb-3">
+          <table id="tomorrow-f" class="tmf">
+              <thead>
+                <tr>
+                  <th>Country</th>
+                  <th style="color: yellow">Home Team</th>
+                  <th></th>
+                  <th style="color: yellow">Away Team</th>
+                  <th style="color: #18d26e">Tip</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+        </div> -->
+
+        <div class="row p-5 my-3" data-aos="zoom-out" style="background: #f72;">
           <div class="col-lg-9 text-center text-lg-start">
             <h3>View Upcoming Predictions Now</h3>
             <p>We offer predictions on two of the most lucrative leagues for betting, and we are always seeking for support to increase our coverage accross europe and the world at large!</p>
@@ -134,14 +168,7 @@
           </div>
         </div>
 
-      </div>
-    </section><!-- End Cta Section -->
-    
-    <!-- ======= Cta Section ======= -->
-    <section id="cta" class="cta">
-      <div class="container">
-
-        <div class="row p-5" data-aos="zoom-out" style="background-color: black;">
+        <div class="row p-5 my-3" data-aos="zoom-out" style="background-color: black;">
           <div class="col-lg-3 cta-btn-container text-center align-items-center justify-content-center">
             <a class="cta-btn" href="#">Coming Soon...</a>
           </div>
@@ -149,11 +176,11 @@
             <h3>View Todays Scores & Many More!</h3>
             <p>At Qtscore, we give you access to EVERY single football league and competitions, analytics, results, and fixtures. We also have live updates of scores at your fingertips.</p>
           </div>
-          
         </div>
 
       </div>
     </section><!-- End Cta Section -->
+  
     
               <!-- ADVERT!! -->
     <section class="p-5 d-flex align-items-center justify-content-center dark-bg">
@@ -205,7 +232,11 @@
   
 
   <!-- Vendor JS Files -->
-  <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+  <script
+			  src="https://code.jquery.com/jquery-3.6.0.js"
+			  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+			  crossorigin="anonymous"></script>
+
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -215,7 +246,11 @@
   <script type="text/javascript" src="https://cookieconsent.popupsmart.com/src/js/popper.js"></script><script> window.start.init({Palette:"palette1",Mode:"floating right",Theme:"wire",Time:"5",})</script>
 <script src="https://apps.elfsight.com/p/platform.js" defer></script>
   <!-- Template Main JS File -->
+
+
+
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/admin.js"></script>
 
     <script data-cfasync="false" type="text/javascript" id="clever-core">
     (function (document, window) {
