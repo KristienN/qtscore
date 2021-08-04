@@ -14,6 +14,12 @@ Project created with:
 * CSS3
 * ES6 JavaScript
 
+## Author
+**Kristien Nyamutsaka**
+
 ### Contributors
 Template used made by [BootstrapMade](https://bootstrapmade.com/)
+
+##License
+MIT
 
