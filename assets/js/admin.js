@@ -10,7 +10,7 @@ $(document).ready(function () {
                             <td><img src="${res.country}" class="img-fluid" /></td>
                             <td>
                                 <div class="fe_pred" style="text-align: center; margin: 0 2rem">
-                                    <p>${res.away_team}</p>
+                                    <p>${res.home_team}</p>
                                 </div>
                             </td>
                             <td><p style="color: white">vs</p></td>
